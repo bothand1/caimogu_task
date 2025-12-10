@@ -249,8 +249,7 @@ public class CaiMoGuHelp {
      * @param postId
      */
     public static   int exeAcPost(List<String> qzIds,Set<String> acPostId,String caiMoGuToken){
-        String urlFormat="https://www.caimogu.cc/circle/act/post_list?id=%s&kwType=post&kw=&type=all&topic=&tags=&page=%10";
-
+        String urlFormat="https://www.caimogu.cc/circle/act/post_list?id=%s&kwType=post&kw=&type=all&topic=&tags=&page=%s";
         int ac=0;
         for (String qzId : qzIds) {
             for (int page=1 ;page<=10;page++){
